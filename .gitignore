@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 **/.DS_Store
+dist/*
+*.egg-info/
+.venv/
+build/
