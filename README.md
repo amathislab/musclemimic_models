@@ -57,6 +57,60 @@ The **MyoFullBody** environment provides a **comprehensive full-body musculoskel
 </p>
 
 ---
+
+## Getting Started
+
+### Prerequisites
+
+The minimum required MuJoCo version for both models is `mujoco==3.2.1`. To use spec with the main Musclemimic environment, please use `mujoco>=3.3.0`. 
+
+### Overview
+
+The structure of the Musclemimic model is as follows. We use MyoFullBody as an example. 
+```
+musclemimic_models/
+└── model/
+    ├── arm/
+    │   ├── assets/
+    │   └── myoarm_bimanual.xml
+    ├── body/
+    │   └── myofullbody.xml
+    ├── head/
+    │   └── assets/
+    ├── leg/
+    │   └── assets/
+    ├── torso/
+    │   └── assets/
+    ├── meshes/
+    └── scene/
+└── tests/
+```
+- `assets/` : includes both the kinematics chain files and the assets definition files for each body segment that its under. 
+- `meshes/` : shared mesh files used across models for bones and skulls
+- `scene/` : MJCF “scene” files used in both MSK as backgrounds
+- `arm/`, `body/`, `head/`, `leg/`, `torso/` : model components and their associated assets/
+- `*.xml` : MJCF model definition(s) (e.g., `myofullbody.xml`, `myoarm_bimanual.xml`)
+
+### Usage
+
+#### Via Pypi
+Install:
+
+```bash
+pip install musclemimic-models
+```
+
+
+#### Via `git clone`
+Clone and install editable (recommended for development):
+
+```bash
+git clone https://github.com/amathislab/musclemimic_models.git
+cd musclemimic_models
+pip install -e .
+```
+
+---
 ### MSK Model Refinement and Validation
 **Muscle Jump and Symmetry**
 
@@ -82,5 +136,10 @@ We also cross-validate the current model using previously published cadaver stud
 ## License
 Musclemimic models are licensed under the [Apache License](https://github.com/amathislab/myofullbody/blob/main/LICENSE).
 
+
+## Citation
+
+
 ## Acknowledgements
+The models in this repository are based on [MyoSuite](https://github.com/myohub/myosuite). 
 
