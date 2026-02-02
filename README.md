@@ -1,5 +1,13 @@
 # MuscleMimic Models
 
+
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/25ca8915-6c44-40f2-8bac-2e4b2b706de9"
+    width="60%"
+  />
+</p>
+
 Musclemimic_models is part of the [**MuscleMimic**](https://github.com/amathislab/musclemimic) research project, in which we created physiologically realistic, muscle-driven musculoskeletal models built on top of [MyoSuite](https://github.com/myohub/myosuite).  This repository is designed to provide users with two musculoskeletal models: BimanualMuscle and MyoFullBody, that could be used together or independently from the Musclemimic pipeline. 
 
 MyoFullBody enables realistic full-body motion control with pure muscle actuation. Below are example fullbody motions demonstrating the model's capabilities, all policies were trained with MuscleMimic.
@@ -27,6 +35,15 @@ MyoFullBody enables realistic full-body motion control with pure muscle actuatio
   </tr>
 </table>
 
+<br/>
+<br/>
+<p align="center">
+  <strong><em>
+    MyoFullbody also allows accurate kinematics when trained with MuscleMimic on AMASS data
+  </em></strong>
+</p>
+
+![Untitled design (1)](https://github.com/user-attachments/assets/13312e4b-6b52-4c8c-8707-499510db676d)
 
 ---
 
@@ -146,5 +163,6 @@ Musclemimic models are licensed under the [Apache License](https://github.com/am
 
 ## Acknowledgements
 The models in this repository are based on [MyoSuite](https://github.com/myohub/myosuite). 
+
 
 
