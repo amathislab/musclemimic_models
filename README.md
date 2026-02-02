@@ -2,29 +2,32 @@
 
 Musclemimic_models is part of the [**MuscleMimic**](https://github.com/amathislab/musclemimic) research project, in which we created physiologically realistic, muscle-driven musculoskeletal models built on top of [MyoSuite](https://github.com/myohub/myosuite).  This repository is designed to provide users with two musculoskeletal models: BimanualMuscle and MyoFullBody, that could be used together or independently from the Musclemimic pipeline. 
 
----
+MyoFullBody enables realistic full-body motion control with pure muscle actuation. Below are example fullbody motions demonstrating the model's capabilities, all policies were trained with MuscleMimic.
 
-## Demos of capable motions
-
-MyoFullBody enables realistic full-body motion control with pure muscle actuation. Below are example motions demonstrating the model's capabilities, all policies were trained with MuscleMimic.
 <table>
   <tr>
     <td align="center" width="50%">
-      <b>Running</b><br>
-      Full-body locomotion with coordinated muscle actuation.<br>
-      <video src="https://github.com/user-attachments/assets/323cdf33-95e9-41a5-a8a0-846df99c5958" width="320" controls></video>
+      <b>Backwards Walking</b>
+      <video src="https://github.com/user-attachments/assets/7098eaff-038b-4299-b139-602c22f6132c" width="320" controls></video>
     </td>
     <td align="center" width="50%">
-      <b>Air Kick</b><br>
-      Dynamic kicking motion with balance control.<br>
-      <video src="https://github.com/user-attachments/assets/5198b62b-46f0-4d06-b541-6172a412cc4e" width="320" controls></video>
+      <b>Running</b>
+      <video src="https://github.com/user-attachments/assets/712c6c8e-88ef-4fe0-b320-ddbd1f996dfc" width="320" controls></video>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>Running</b>
+      <video src="https://github.com/user-attachments/assets/5e568de8-7be6-4387-a1f2-d443982d34a5" width="320" controls></video>
+    </td>
+    <td align="center" width="50%">
+      <b>Dancing</b>
+      <video src="https://github.com/user-attachments/assets/12abc09d-4d36-49d3-9138-65e4ee4fa4bd" width="320" controls></video>
     </td>
   </tr>
 </table>
 
-Below we showcase a walking motion and extract the corresponding synthetic muscle activation patterns for three leg muscles along two gait cycles.
-<video src="https://github.com/user-attachments/assets/da545e08-b241-451b-b02d-d3ad3e1ee41d" controls></video>
-    
+
 ---
 
 ## Musculoskeletal Models
@@ -90,6 +93,7 @@ musclemimic_models/
 - `scene/` : MJCF “scene” files used in both MSK as backgrounds
 - `arm/`, `body/`, `head/`, `leg/`, `torso/` : model components and their associated assets/
 - `*.xml` : MJCF model definition(s) (e.g., `myofullbody.xml`, `myoarm_bimanual.xml`)
+- `test/`: testing files for symmetry between bodies, geoms, sites and muscle
 
 ### Usage
 
@@ -142,4 +146,5 @@ Musclemimic models are licensed under the [Apache License](https://github.com/am
 
 ## Acknowledgements
 The models in this repository are based on [MyoSuite](https://github.com/myohub/myosuite). 
+
 
