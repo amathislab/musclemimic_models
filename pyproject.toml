@@ -1,14 +1,30 @@
 [project]
 name = "musclemimic-models"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "MuscleMimic Models"
 readme = "README.md"
-requires-python = ">=3.13"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+authors = [
+    { name = "MuscleMimic Team" }
+]
+keywords = ["musculoskeletal", "mujoco", "biomechanics", "muscle", "fullbody"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
 dependencies = [
     "matplotlib>=3.10.8",
     "mujoco>=3.4.0",
     "scipy>=1.17.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/amathislab/musclemimic_models"
+Repository = "https://github.com/amathislab/musclemimic_models"
+Issues = "https://github.com/amathislab/musclemimic_models/issues"
 
 [build-system]
 requires = ["setuptools>=61.0"]
@@ -17,3 +33,6 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["musclemimic_models*"]
+
+[tool.setuptools.package-data]
+musclemimic_models = ["**/*.xml", "**/*.stl", "**/*.png"]

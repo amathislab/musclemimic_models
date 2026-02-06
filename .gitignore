@@ -6,3 +6,4 @@ dist/*
 *.egg-info/
 .venv/
 build/
+uv.lock
