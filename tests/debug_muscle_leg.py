@@ -14,7 +14,7 @@ from muscle_analysis_utils import (
     plot_pair,
 )
 
-BASE_DIR = Path(__file__).resolve().parent.parent / "model" / "leg"
+BASE_DIR = Path(__file__).resolve().parent.parent / "musclemimic_models" / "model" / "leg"
 TMP_XML = BASE_DIR / "_tmp_myoleg.xml"
 
 OUT_DIR = Path(__file__).resolve().parent / "output" / "muscle_analysis"

@@ -18,7 +18,7 @@ from muscle_analysis_utils import (
 OUT_DIR = Path(__file__).resolve().parent / "output" / "muscle_analysis"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-BASE_DIR = Path(__file__).resolve().parent.parent / "model" / "torso"
+BASE_DIR = Path(__file__).resolve().parent.parent / "musclemimic_models" / "model" / "torso"
 CHAIN_SRC = BASE_DIR / "assets/myotorso_bimanual_chain.xml"
 CHAIN_TMP = BASE_DIR / "assets/_tmp_myotorso_bimanual_chain__comment503_505.xml"
 TMP_XML = BASE_DIR / "_tmp_myotorso.xml"

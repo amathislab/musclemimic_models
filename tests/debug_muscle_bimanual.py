@@ -18,7 +18,7 @@ OUT_DIR = Path(__file__).resolve().parent / "output" / "muscle_analysis"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 XML_PATH = Path(__file__).resolve().parent.parent
-XML_PATH = XML_PATH / "model" / "arm" / "myoarm_bimanual.xml"
+XML_PATH = XML_PATH / "musclemimic_models" / "model" / "arm" / "myoarm_bimanual.xml"
 
 model = mujoco.MjModel.from_xml_path(str(XML_PATH))
 data = mujoco.MjData(model)
