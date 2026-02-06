@@ -1,5 +1,3 @@
-"""MuscleMimic Models — MuJoCo musculoskeletal model package."""
-
 from pathlib import Path
 import mujoco
 
@@ -23,3 +21,12 @@ def load(name):
     xml_path = get_xml_path(name)
     model = mujoco.MjModel.from_xml_path(str(xml_path))
     return model, mujoco.MjData(model)
+
+
+def print_path(name=None):
+    """Print model path(s). If name is None, print all."""
+    if name:
+        print(get_xml_path(name))
+    else:
+        for k in REGISTRY:
+            print(f"{k}: {MODELS_DIR / REGISTRY[k]}")
