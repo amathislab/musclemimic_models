@@ -1,5 +1,9 @@
 from pathlib import Path
+from importlib.metadata import version
+
 import mujoco
+
+__version__ = version("musclemimic-models")
 
 MODELS_DIR = Path(__file__).resolve().parent / "model"
 
