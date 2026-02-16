@@ -189,11 +189,11 @@ We also cross-validate the current model using previously published cadaver stud
 
 
 ## License
-Musclemimic models are licensed under the [Apache License](https://github.com/amathislab/myofullbody/blob/main/LICENSE).
-
+This project is licensed under the [Apache License](https://github.com/amathislab/myofullbody/blob/main/LICENSE).  
+See the [LICENSE](LICENSE) file for details.
 
 ## Citation
-
+If you use MuscleMimic in your research, please cite:
 ```bibtex
 @article{li2026musclemimic,
   title={Towards Embodied AI with MuscleMimic: Unlocking full-body musculoskeletal motor learning at scale},
@@ -203,9 +203,5 @@ Musclemimic models are licensed under the [Apache License](https://github.com/am
 ```
 
 ## Acknowledgements
-The models in this repository are based on [MyoSuite](https://github.com/myohub/myosuite). 
-
-
-
-
+The models in this repository build upon [MyoSuite](https://github.com/myohub/myosuite), an open-source musculoskeletal simulation framework.  
 
