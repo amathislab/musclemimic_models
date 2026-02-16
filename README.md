@@ -194,9 +194,17 @@ Musclemimic models are licensed under the [Apache License](https://github.com/am
 
 ## Citation
 
+```bibtex
+@article{li2026musclemimic,
+  title={Towards Embodied AI with MuscleMimic: Unlocking full-body musculoskeletal motor learning at scale},
+  author={Li, Chengkun and Wang, Cheryl and Ziliotto, Bianca and Simos, Merkourios and Durandau, Guillaume and Mathis, Alexander},
+  year={2026}
+}
+```
 
 ## Acknowledgements
 The models in this repository are based on [MyoSuite](https://github.com/myohub/myosuite). 
+
 
 
 
