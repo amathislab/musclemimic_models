@@ -16,17 +16,17 @@ MyoFullBody enables realistic full-body motion control with pure muscle actuatio
   <tr>
     <td align="center" width="50%">
       <b>Backwards Walking</b>
-      <video src="https://github.com/user-attachments/assets/7098eaff-038b-4299-b139-602c22f6132c" width="320" controls></video>
+      <video src="https://github.com/user-attachments/assets/c413767a-e8d2-4a73-80d3-bc58bd8f90b7" width="320" controls></video>
     </td>
     <td align="center" width="50%">
-      <b>Running</b>
-      <video src="https://github.com/user-attachments/assets/712c6c8e-88ef-4fe0-b320-ddbd1f996dfc" width="320" controls></video>
+      <b>Walking Running</b>
+      <video src="https://github.com/user-attachments/assets/305e34e2-49ff-4f1b-a62d-2bc8376dcf4f" width="320" controls></video>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <b>Running</b>
-      <video src="https://github.com/user-attachments/assets/5e568de8-7be6-4387-a1f2-d443982d34a5" width="320" controls></video>
+      <b>Walking Turning</b>
+      <video src="https://github.com/user-attachments/assets/1fb2ea5d-1435-45d8-8cce-094500cfe76a" width="320" controls></video>
     </td>
     <td align="center" width="50%">
       <b>Dancing</b>
