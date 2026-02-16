@@ -45,6 +45,10 @@ MyoFullBody enables realistic full-body motion control with pure muscle actuatio
 
 ![Untitled design (1)](https://github.com/user-attachments/assets/13312e4b-6b52-4c8c-8707-499510db676d)
 
+<br/>
+<br/>
+BimanualMuscle focuses on upper-limb musculoskeletal control, enabling faster training convergence while preserving full finger articulation capabilities.
+(The videos shown below were recorded with finger actuation disabled for stability and visualization purposes.)
 ---
 
 ## Musculoskeletal Models
