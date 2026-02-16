@@ -47,8 +47,38 @@ MyoFullBody enables realistic full-body motion control with pure muscle actuatio
 
 <br/>
 <br/>
-BimanualMuscle focuses on upper-limb musculoskeletal control, enabling faster training convergence while preserving full finger articulation capabilities.
-(The videos shown below were recorded with finger actuation disabled for stability and visualization purposes.)
+
+**BimanualMuscle** focuses on upper-limb musculoskeletal control, enabling faster training convergence while preserving full finger articulation capabilities.
+(The videos shown below were recorded with finger actuation disabled)
+
+
+
+<br/>
+<br/>
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <b>Lifting Box</b>
+      <video src="https://github.com/user-attachments/assets/f31f1c0a-0652-47d2-b9b4-2d6abd2cab84" width="320" controls></video>
+    </td>
+    <td align="center" width="50%">
+      <b>Waving</b>
+      <video src="https://github.com/user-attachments/assets/dcdb0e93-28c9-46a5-b4be-3fc22cebf6f7" width="320" controls></video>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>Drinking Water</b>
+      <video src="https://github.com/user-attachments/assets/b2b97ed0-cc9e-40bc-a18c-538250081674" width="320" controls></video>
+    </td>
+    <td align="center" width="50%">
+      <b>Jumpingjack</b>
+      <video src="https://github.com/user-attachments/assets/b9716c13-da84-4571-bc0f-ae47018d6b8d" width="320" controls></video>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## Musculoskeletal Models
@@ -167,6 +197,7 @@ Musclemimic models are licensed under the [Apache License](https://github.com/am
 
 ## Acknowledgements
 The models in this repository are based on [MyoSuite](https://github.com/myohub/myosuite). 
+
 
 
 
