@@ -1,5 +1,15 @@
 # MuscleMimic Models
 
+[![PyPI version](https://img.shields.io/pypi/v/musclemimic-models.svg)](https://pypi.org/project/musclemimic-models/)
+[![Downloads](https://img.shields.io/pypi/dm/musclemimic-models.svg)](https://pypi.org/project/musclemimic-models/)
+[![Total Downloads](https://static.pepy.tech/badge/musclemimic-models)](https://pepy.tech/project/musclemimic-models)
+[![Python Version](https://img.shields.io/pypi/pyversions/musclemimic-models.svg)](https://pypi.org/project/musclemimic-models/)
+[![License](https://img.shields.io/pypi/l/musclemimic-models.svg)](https://github.com/amathislab/musclemimic_models/blob/main/LICENSE)
+
+Oneline install:
+```bash
+pip install musclemimic-models
+```
 
 <p align="center">
   <img
