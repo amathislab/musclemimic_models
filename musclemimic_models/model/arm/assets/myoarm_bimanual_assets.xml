@@ -1,5 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mujocoinclude model="MyoSkeleton">
+<mujocoinclude model="MyoArm_Bimanual">
+<!-- =================================================
+    Copyright 2026 MuscleMimic Team
+    Model           :: MyoArm Bimanual Assets (MuJoCo v3.0)
+    Author          :: MuscleMimic Team
+    Initial Creator :: Bianca Ziliotto built upon MyoSuite models
+    Refinement      :: Chengkun Li, Huiyi Wang
+    License         :: Apache License, Version 2.0
+                       You may not use this file except in compliance with the License.
+                       You may obtain a copy of the License at
+                       http://www.apache.org/licenses/LICENSE-2.0
+                       Unless required by applicable law or agreed to in writing, software
+                       distributed under the License is distributed on an "AS IS" BASIS,
+                       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+                       See the License for the specific language governing permissions and
+                       limitations under the License.
+====================================================== -->
     <!-- Modified by BimanualXMLFixer on 2025-07-24T23:23:53.546272 -->
     <compiler boundmass="0.001" boundinertia="0.0001" balanceinertia="true" meshdir=".." texturedir=".." angle="radian" inertiafromgeom="auto"></compiler>
     <option timestep="0.002" />
@@ -94,38 +110,38 @@
         <mesh name="5proxph_r" file="meshes/5proxph.stl" scale="1 1 1" />
         <mesh name="5midph_r" file="meshes/5midph.stl" scale="1 1 1" />
         <mesh name="5distph_r" file="meshes/5distph.stl" scale="1 1 1" />
-        <mesh name="clavicle_l" file="meshes/clavicle_l.stl" scale="1 1 1" />
-        <mesh name="scapula_l" file="meshes/scapula_l.stl" scale="1 1 1" />
-        <mesh name="humerus_l" file="meshes/humerus_l.stl" scale="1 1 1" />
-        <mesh name="ulna_l" file="meshes/ulna_l.stl" scale="1 1 1" />
-        <mesh name="radius_l" file="meshes/radius_l.stl" scale="1 1 1" />
-        <mesh name="lunate_l" file="meshes/lunate_l.stl" scale="1 1 1" />
-        <mesh name="scaphoid_l" file="meshes/scaphoid_l.stl" scale="1 1 1" />
-        <mesh name="pisiform_l" file="meshes/pisiform_l.stl" scale="1 1 1" />
-        <mesh name="triquetrum_l" file="meshes/triquetrum_l.stl" scale="1 1 1" />
-        <mesh name="capitate_l" file="meshes/capitate_l.stl" scale="1 1 1" />
-        <mesh name="trapezium_l" file="meshes/trapezium_l.stl" scale="1 1 1" />
-        <mesh name="1mc_l" file="meshes/1mc_l.stl" scale="1 1 1" />
-        <mesh name="thumbprox_l" file="meshes/thumbprox_l.stl" scale="1 1 1" />
-        <mesh name="thumbdist_l" file="meshes/thumbdist_l.stl" scale="1 1 1" />
-        <mesh name="trapezoid_l" file="meshes/trapezoid_l.stl" scale="1 1 1" />
-        <mesh name="hamate_l" file="meshes/hamate_l.stl" scale="1 1 1" />
-        <mesh name="2mc_l" file="meshes/2mc_l.stl" scale="1 1 1" />
-        <mesh name="2proxph_l" file="meshes/2proxph_l.stl" scale="1 1 1" />
-        <mesh name="2midph_l" file="meshes/2midph_l.stl" scale="1 1 1" />
-        <mesh name="2distph_l" file="meshes/2distph_l.stl" scale="1 1 1" />
-        <mesh name="3mc_l" file="meshes/3mc_l.stl" scale="1 1 1" />
-        <mesh name="3proxph_l" file="meshes/3proxph_l.stl" scale="1 1 1" />
-        <mesh name="3midph_l" file="meshes/3midph_l.stl" scale="1 1 1" />
-        <mesh name="3distph_l" file="meshes/3distph_l.stl" scale="1 1 1" />
-        <mesh name="4mc_l" file="meshes/4mc_l.stl" scale="1 1 1" />
-        <mesh name="4proxph_l" file="meshes/4proxph_l.stl" scale="1 1 1" />
-        <mesh name="4midph_l" file="meshes/4midph_l.stl" scale="1 1 1" />
-        <mesh name="4distph_l" file="meshes/4distph_l.stl" scale="1 1 1" />
-        <mesh name="5mc_l" file="meshes/5mc_l.stl" scale="1 1 1" />
-        <mesh name="5proxph_l" file="meshes/5proxph_l.stl" scale="1 1 1" />
-        <mesh name="5midph_l" file="meshes/5midph_l.stl" scale="1 1 1" />
-        <mesh name="5distph_l" file="meshes/5distph_l.stl" scale="1 1 1" />
+        <mesh name="clavicle_l" file="meshes/clavicle.stl" scale="1 1 -1" />
+        <mesh name="scapula_l" file="meshes/scapula.stl" scale="1 1 -1" />
+        <mesh name="humerus_l" file="meshes/humerus.stl" scale="1 1 -1" />
+        <mesh name="ulna_l" file="meshes/ulna.stl" scale="1 1 -1" />
+        <mesh name="radius_l" file="meshes/radius.stl" scale="1 1 -1" />
+        <mesh name="lunate_l" file="meshes/lunate.stl" scale="1 1 -1" />
+        <mesh name="scaphoid_l" file="meshes/scaphoid.stl" scale="1 1 -1" />
+        <mesh name="pisiform_l" file="meshes/pisiform.stl" scale="1 1 -1" />
+        <mesh name="triquetrum_l" file="meshes/triquetrum.stl" scale="1 1 -1" />
+        <mesh name="capitate_l" file="meshes/capitate.stl" scale="1 1 -1" />
+        <mesh name="trapezium_l" file="meshes/trapezium.stl" scale="1 1 -1" />
+        <mesh name="1mc_l" file="meshes/1mc.stl" scale="1 1 -1" />
+        <mesh name="thumbprox_l" file="meshes/thumbprox.stl" scale="1 1 -1" />
+        <mesh name="thumbdist_l" file="meshes/thumbdist.stl" scale="1 1 -1" />
+        <mesh name="trapezoid_l" file="meshes/trapezoid.stl" scale="1 1 -1" />
+        <mesh name="hamate_l" file="meshes/hamate.stl" scale="1 1 -1" />
+        <mesh name="2mc_l" file="meshes/2mc.stl" scale="1 1 -1" />
+        <mesh name="2proxph_l" file="meshes/2proxph.stl" scale="1 1 -1" />
+        <mesh name="2midph_l" file="meshes/2midph.stl" scale="1 1 -1" />
+        <mesh name="2distph_l" file="meshes/2distph.stl" scale="1 1 -1" />
+        <mesh name="3mc_l" file="meshes/3mc.stl" scale="1 1 -1" />
+        <mesh name="3proxph_l" file="meshes/3proxph.stl" scale="1 1 -1" />
+        <mesh name="3midph_l" file="meshes/3midph.stl" scale="1 1 -1" />
+        <mesh name="3distph_l" file="meshes/3distph.stl" scale="1 1 -1" />
+        <mesh name="4mc_l" file="meshes/4mc.stl" scale="1 1 -1" />
+        <mesh name="4proxph_l" file="meshes/4proxph.stl" scale="1 1 -1" />
+        <mesh name="4midph_l" file="meshes/4midph.stl" scale="1 1 -1" />
+        <mesh name="4distph_l" file="meshes/4distph.stl" scale="1 1 -1" />
+        <mesh name="5mc_l" file="meshes/5mc.stl" scale="1 1 -1" />
+        <mesh name="5proxph_l" file="meshes/5proxph.stl" scale="1 1 -1" />
+        <mesh name="5midph_l" file="meshes/5midph.stl" scale="1 1 -1" />
+        <mesh name="5distph_l" file="meshes/5distph.stl" scale="1 1 -1" />
         <texture name="texgeom" type="cube" builtin="flat" mark="cross" width="127" height="1278" rgb1="0.7 0.7 0.7" rgb2="0.9 0.9 0.9" markrgb="1 1 1" random="0.01" />
         <material name="geom" texture="texgeom" texuniform="true" />
         <material name="MatSkin" specular="0.2" shininess=".1" reflectance="0.5" rgba="0.9 .7 .5 1" />

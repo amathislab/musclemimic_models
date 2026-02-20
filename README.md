@@ -199,8 +199,8 @@ We also cross-validate the current model using previously published cadaver stud
 
 
 ## License
-This project is licensed under the [Apache License](https://github.com/amathislab/myofullbody/blob/main/LICENSE).  
-See the [LICENSE](LICENSE) file for details.
+This project is licensed under the [Apache License](https://github.com/amathislab/musclemimic_models/blob/main/LICENSE).
+See the [LICENSE](LICENSE) and [NOTICE](NOTICE) files for details.
 
 ## Citation
 If you use MuscleMimic in your research, please cite:
