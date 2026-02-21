@@ -1,6 +1,6 @@
 [project]
 name = "musclemimic-models"
-version = "1.0.3"
+version = "1.0.4"
 description = "MuscleMimic Models"
 readme = "README.md"
 license = "Apache-2.0"
