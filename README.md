@@ -5,6 +5,7 @@
 [![Total Downloads](https://static.pepy.tech/badge/musclemimic-models)](https://pepy.tech/project/musclemimic-models)
 [![Python Version](https://img.shields.io/pypi/pyversions/musclemimic-models.svg)](https://pypi.org/project/musclemimic-models/)
 [![License](https://img.shields.io/pypi/l/musclemimic-models.svg)](https://github.com/amathislab/musclemimic_models/blob/main/LICENSE)
+[![Preprint](https://img.shields.io/badge/Preprint-arXiv-b31b1b)](https://arxiv.org/abs/2603.25544)
 
 Oneline install:
 ```bash
@@ -18,7 +19,7 @@ pip install musclemimic-models
   />
 </p>
 
-Musclemimic_models is part of the [**MuscleMimic**](https://github.com/amathislab/musclemimic) research project, in which we created physiologically realistic, muscle-driven musculoskeletal models built on top of [MyoSuite](https://github.com/myohub/myosuite).  This repository is designed to provide users with two musculoskeletal models: BimanualMuscle and MyoFullBody, that could be used together or independently from the Musclemimic pipeline. 
+Musclemimic_models is part of the [**MuscleMimic**](https://github.com/amathislab/musclemimic) research project, in which we created physiologically realistic, muscle-driven musculoskeletal models built on top of [MyoSuite](https://github.com/myohub/myosuite).  This repository is designed to provide users with two musculoskeletal models: MyoBimanualArm and MyoFullBody, that could be used together or independently from the Musclemimic pipeline. 
 
 MyoFullBody enables realistic full-body motion control with pure muscle actuation. Below are example fullbody motions demonstrating the model's capabilities, all policies were trained with MuscleMimic.
 
@@ -58,7 +59,7 @@ MyoFullBody enables realistic full-body motion control with pure muscle actuatio
 <br/>
 <br/>
 
-**BimanualMuscle** focuses on upper-limb musculoskeletal control, enabling faster training convergence while preserving full finger articulation capabilities.
+**MyoBimanualArm** focuses on upper-limb musculoskeletal control, enabling faster training convergence while preserving full finger articulation capabilities.
 (The videos shown below were recorded with finger actuation disabled)
 
 
@@ -97,16 +98,16 @@ Both musculoskeletal models are built on MyoSuite components, combining **[MyoAr
 
 ### Environment Summary
 
-| Model           | Type        | Joints | DoF | Muscles | Focus                        |
+| Model           | Type        | Joints | Muscles | DoFs | Focus                        |
 |-----------------|-------------|--------|---------|---------|------------------------------|
-| BimanualMuscle  | Fixed-base  | 76 (36*)    | 126 (64*)     | 54 (14*) | Upper-body manipulation      |
+| MyoBimanualArm  | Fixed-base  | 76 (36*)    | 126 (64*)     | 54 (14*) | Upper-body manipulation      |
 | MyoFullBody     | Free-root   | 123 (83*)    | 416 (354*)    | 72 (32*) | Locomotion and manipulation    |
 
 ##### $^*$ denotes configurations with finger muscles temporarily disabled. 
 
-### BimanualMuscle Environment
+### MyoBimanualArm Environment
 
-The **BimanualMuscle** environment is designed for **upper-body manipulation task**. Explicit contacts are enabled in between both arms and with the thorax.
+The **MyoBimanualArm** environment is designed for **upper-body manipulation task**. Explicit contacts are enabled in between both arms and with the thorax.
 <p align="center">
   <img width="2820" height="800" alt="BimanualMuscle" src="https://github.com/user-attachments/assets/67e68c50-43dd-4f0f-845e-53cd3a984f1f" />
 </p>
@@ -179,7 +180,7 @@ pip install -e .
 ### MSK Model Refinement and Validation
 **Muscle Jump and Symmetry**
 
-While building MyoFullBody and BimanualMuscle, we corrected left–right limb asymmetries and addressed several unexpected muscle-jumping behaviors. A few representative fixes are shown below.
+While building MyoFullBody and MyoBimanualArm, we corrected left–right limb asymmetries and addressed several unexpected muscle-jumping behaviors. A few representative fixes are shown below.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c4772223-e655-46c4-9105-2db4938e6450" width="45%">
@@ -205,9 +206,10 @@ See the [LICENSE](LICENSE) and [NOTICE](NOTICE) files for details.
 ## Citation
 If you use MuscleMimic in your research, please cite:
 ```bibtex
-@article{li2026musclemimic,
+@article{Li2026MuscleMimic,
   title={Towards Embodied AI with MuscleMimic: Unlocking full-body musculoskeletal motor learning at scale},
-  author={Li, Chengkun and Wang, Cheryl and Ziliotto, Bianca and Simos, Merkourios and Durandau, Guillaume and Mathis, Alexander},
+  author={Li, Chengkun and Wang, Cheryl and Ziliotto, Bianca and Simos, Merkourios and Kovecses, Jozsef and Durandau, Guillaume and Mathis, Alexander},
+  journal={arXiv preprint arXiv:2603.25544},
   year={2026}
 }
 ```
