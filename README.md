@@ -12,6 +12,30 @@ Oneline install:
 pip install musclemimic-models
 ```
 
+Load a model in two lines:
+```python
+import musclemimic_models as mm
+
+model, data = mm.load("myofullbody")   # or "bimanual"
+```
+
+Other helpers:
+```python
+import mujoco, mujoco.viewer
+import musclemimic_models as mm
+
+# List available models
+print(list(mm.REGISTRY))               # ['bimanual', 'myofullbody']
+
+# Get the raw MJCF path
+xml_path = mm.get_xml_path("bimanual")
+model = mujoco.MjModel.from_xml_path(str(xml_path))
+
+# Launch the interactive viewer
+model, data = mm.load("bimanual")
+mujoco.viewer.launch(model, data)
+```
+
 <p align="center">
   <img
     src="https://github.com/user-attachments/assets/25ca8915-6c44-40f2-8bac-2e4b2b706de9"
@@ -109,7 +133,7 @@ Both musculoskeletal models are built on MyoSuite components, combining **[MyoAr
 
 The **MyoBimanualArm** environment is designed for **upper-body manipulation task**. Explicit contacts are enabled in between both arms and with the thorax.
 <p align="center">
-  <img width="2820" height="800" alt="BimanualMuscle" src="https://github.com/user-attachments/assets/67e68c50-43dd-4f0f-845e-53cd3a984f1f" />
+  <img width="90%" alt="BimanualMuscle" src="https://github.com/user-attachments/assets/67e68c50-43dd-4f0f-845e-53cd3a984f1f" />
 </p>
 
 ### MyoFullBody Environment
@@ -118,7 +142,7 @@ The **MyoFullBody** environment provides a **comprehensive full-body musculoskel
 
 
 <p align="center">
-  <img width="2820" height="1515" alt="MyoFullBody" src="https://github.com/user-attachments/assets/067986b7-00a7-4461-9b53-dc7a72fd21ed" />
+  <img width="90%" alt="MyoFullBody" src="https://github.com/user-attachments/assets/067986b7-00a7-4461-9b53-dc7a72fd21ed" />
 </p>
 
 ---

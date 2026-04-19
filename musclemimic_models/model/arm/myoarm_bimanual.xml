@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<mujoco model="TODO: add name">
+<mujoco model="MuscleMimic MyoBiamanualArm">
 <!-- =================================================
     Copyright 2026 MuscleMimic Team
     Model           :: MyoArm Bimanual (MuJoCo v3.0)

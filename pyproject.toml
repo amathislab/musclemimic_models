@@ -1,6 +1,6 @@
 [project]
 name = "musclemimic-models"
-version = "1.0.4"
+version = "1.0.5"
 description = "MuscleMimic Models"
 readme = "README.md"
 license = "Apache-2.0"
@@ -24,8 +24,8 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "matplotlib>=3.10.8",
-    "scipy>=1.17.0",
+    "matplotlib",
+    "scipy",
 ]
 
 [project.urls]

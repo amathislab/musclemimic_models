@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<mujoco model="MyoSuite's MyoFullBody Model">
+<mujoco model="MuscleMimic and MyoSuite MyoFullBody">
 
 <!-- =================================================
     Copyright 2026 MuscleMimic Team
