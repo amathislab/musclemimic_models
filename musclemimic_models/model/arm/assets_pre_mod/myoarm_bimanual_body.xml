@@ -101,7 +101,7 @@
                 <inertial pos="0 0 0" mass="0.001" diaginertia="1 1 1" />
                 <joint name="shoulder_elv" pos="0 0 0" axis="-0.998261 0.00229991 0.0588977" range="0 3.142" user="9.61084e-06" />
                 <joint name="shoulder1_r2" pos="0 0 0" axis="0.00479995 0.999089 0.0423995" range="-2.242 1.658" user="-0.251642" />
-                <body name="humerus">
+                <body name="humerus_r">
                   <inertial pos="0.018064 -0.140141 -0.012746" quat="0.407851 0.343714 -0.567755 0.627034" mass="1.99757" diaginertia="0.0128576 0.0121576 0.00239265" />
                   <joint name="shoulder_rot" pos="0 0 0" axis="0.00479995 0.999089 0.0423995" range="-1.571 2.094" user="0.161391" />
                   <geom name="humerus_geom_1" type="mesh" mesh="humerus_geom_1_humerus" contype="0" conaffinity="0" />
@@ -269,7 +269,7 @@
                   <site name="R.Bicep_marker" class="marker" pos="0.01591 -0.181 -0.00553" />
                   <site name="R.Elbow.Lateral_marker" class="marker" pos="0.00509 -0.2806 0.02884" />
                   <site name="R.Elbow.Medial_marker" class="marker" pos="-0.00407 -0.2844 -0.05408" />
-                  <body name="ulna" childclass="elbow" pos="0.0061 -0.2904 -0.0123">
+                  <body name="ulna_r" childclass="elbow" pos="0.0061 -0.2904 -0.0123">
                     <inertial pos="0.00971783 -0.0959509 0.024286" quat="0.792048 0.609078 0.0156735 0.0379256" mass="1.1053" diaginertia="0.00543663 0.00523521 0.001" />
                     <joint name="elbow_flexion" pos="0 0 0" axis="0.0494004 0.0366003 0.998108" range="0 2.269" user="1.05676" />
                     <geom name="ulna_geom_1" type="mesh" mesh="ulna_geom_1_ulna" contype="0" conaffinity="0" />
@@ -378,7 +378,7 @@
                       <camera name="hand_bottom" pos="0.02 -0.2 -0.55" quat="0.000796327 0 1 0" />
                       <camera name="hand_side_inter" pos="0.5 -0.3 0" quat="0.500398 0.5 0.5 0.499602" />
                       <camera name="hand_side_exter" pos="-0.5 -0.3 0" quat="0.500398 0.5 -0.5 -0.499602" />
-                      <body name="lunate" childclass="wrist" pos="0.018 -0.242 0.025">
+                      <body name="lunate_r" childclass="wrist" pos="0.018 -0.242 0.025">
                         <joint name="deviation" pos="0 0 0" axis="0 0 1" range="-0.174533 0.436332" damping="0.25" />
                         <joint name="flexion" pos="0 0 0" axis="1 0 0" range="-0.785398 0.785398" damping="0.25" />
                         <geom name="lunate" type="mesh" mesh="lunate" contype="0" conaffinity="0" />
