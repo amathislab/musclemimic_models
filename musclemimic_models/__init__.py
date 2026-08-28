@@ -9,7 +9,9 @@ MODELS_DIR = Path(__file__).resolve().parent / "model"
 
 REGISTRY = {
     "bimanual": "arm/myoarm_bimanual.xml",
+    "bimanual_pre_mod": "arm/myoarm_bimanual_pre_mod.xml",
     "myofullbody": "body/myofullbody.xml",
+    "myofullbody_pre_mod": "body/myofullbody_pre_mod.xml",
 }
 
 

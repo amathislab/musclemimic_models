@@ -19,13 +19,21 @@ import musclemimic_models as mm
 model, data = mm.load("myofullbody")   # or "bimanual"
 ```
 
+Pre-modification variants can be loaded through the same API after filling in
+their placeholder XML files:
+
+```python
+model, data = mm.load("myofullbody_pre_mod")
+model, data = mm.load("bimanual_pre_mod")
+```
+
 Other helpers:
 ```python
 import mujoco, mujoco.viewer
 import musclemimic_models as mm
 
 # List available models
-print(list(mm.REGISTRY))               # ['bimanual', 'myofullbody']
+print(list(mm.REGISTRY))
 
 # Get the raw MJCF path
 xml_path = mm.get_xml_path("bimanual")
