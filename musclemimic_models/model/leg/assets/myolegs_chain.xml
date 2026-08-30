@@ -12,7 +12,7 @@
 	  - Added collision pairs for leg-leg and foot-foot self-contact
 ====================================================== -->
 
-    <body name="pelvis" pos="0 0 0" quat="0.707107 0.707107 0 0" childclass="myolegs">
+    <body name="pelvis" pos="0 0 0" euler="1.57 -1.57 0" childclass="myolegs">
         <site name="pelvis" class="myo_leg_marker"/>
         <inertial pos="-0.07 -0.03 0" mass="10.96" diaginertia="0.0622075 0.0532711 0.0299242" />
         <geom name="r_pelvis_col" type="ellipsoid" size=".110 .13 0.11" class="coll" pos="-.08 -.03 0.07" euler="0.2 0 0" mass="2"/>
