@@ -166,17 +166,17 @@
     <exclude body1="proxph4_l" body2="proxph5_l" />
   </contact>
   <equality>
-    <joint name="sternoclavicular_r2_con" joint1="sternoclavicular_r2" joint2="shoulder_elv" polycoef="0 -0.242 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="sternoclavicular_r3_con" joint1="sternoclavicular_r3" joint2="shoulder_elv" polycoef="0 0.1025 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="unrotscap_r2_con" joint1="unrotscap_r2" joint2="shoulder_elv" polycoef="0 0.242 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="unrotscap_r3_con" joint1="unrotscap_r3" joint2="shoulder_elv" polycoef="0 -0.1025 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="acromioclavicular_r1_con" joint1="acromioclavicular_r1" joint2="shoulder_elv" polycoef="0 0.178 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="acromioclavicular_r2_con" joint1="acromioclavicular_r2" joint2="shoulder_elv" polycoef="0 -0.049 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="acromioclavicular_r3_con" joint1="acromioclavicular_r3" joint2="shoulder_elv" polycoef="0 0.396 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="unrothum_r1_con" joint1="unrothum_r1" joint2="shoulder_elv" polycoef="0 -0.178 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="unrothum_r2_con" joint1="unrothum_r2" joint2="shoulder_elv" polycoef="0 0.049 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="unrothum_r3_con" joint1="unrothum_r3" joint2="shoulder_elv" polycoef="0 -0.396 0 0 0" solimp="0.9999 0.9999" />
-    <joint name="shoulder1_r2_con" joint1="shoulder1_r2" joint2="elv_angle" polycoef="0 -1 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="sternoclavicular_r2_con" joint1="sternoclavicular_r2_r" joint2="shoulder_elv_r" polycoef="0 -0.242 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="sternoclavicular_r3_con" joint1="sternoclavicular_r3_r" joint2="shoulder_elv_r" polycoef="0 0.1025 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="unrotscap_r2_con" joint1="unrotscap_r2_r" joint2="shoulder_elv_r" polycoef="0 0.242 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="unrotscap_r3_con" joint1="unrotscap_r3_r" joint2="shoulder_elv_r" polycoef="0 -0.1025 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="acromioclavicular_r1_con" joint1="acromioclavicular_r1_r" joint2="shoulder_elv_r" polycoef="0 0.178 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="acromioclavicular_r2_con" joint1="acromioclavicular_r2_r" joint2="shoulder_elv_r" polycoef="0 -0.049 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="acromioclavicular_r3_con" joint1="acromioclavicular_r3_r" joint2="shoulder_elv_r" polycoef="0 0.396 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="unrothum_r1_con" joint1="unrothum_r1_r" joint2="shoulder_elv_r" polycoef="0 -0.178 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="unrothum_r2_con" joint1="unrothum_r2_r" joint2="shoulder_elv_r" polycoef="0 0.049 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="unrothum_r3_con" joint1="unrothum_r3_r" joint2="shoulder_elv_r" polycoef="0 -0.396 0 0 0" solimp="0.9999 0.9999" />
+    <joint name="shoulder1_r2_con" joint1="shoulder1_r2_r" joint2="elv_angle_r" polycoef="0 -1 0 0 0" solimp="0.9999 0.9999" />
     <joint name="sternoclavicular_r2_con_l" joint1="sternoclavicular_r2_l" joint2="shoulder_elv_l" polycoef="0 -0.242 0 0 0" solimp="0.9999 0.9999" />
     <joint name="sternoclavicular_r3_con_l" joint1="sternoclavicular_r3_l" joint2="shoulder_elv_l" polycoef="0 0.1025 0 0 0" solimp="0.9999 0.9999" />
     <joint name="unrotscap_r2_con_l" joint1="unrotscap_r2_l" joint2="shoulder_elv_l" polycoef="0 0.242 0 0 0" solimp="0.9999 0.9999" />
