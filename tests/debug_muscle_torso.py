@@ -12,6 +12,7 @@ import numpy as np
 from muscle_analysis_utils import (
     compute_moment_arm_curve,
     compute_force_length_curve,
+    parse_model_joint_equalities,
     plot_pair,
 )
 
@@ -20,12 +21,8 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 BASE_DIR = Path(__file__).resolve().parent.parent / "musclemimic_models" / "model" / "torso"
 CHAIN_SRC = BASE_DIR / "assets/myotorso_bimanual_chain.xml"
-CHAIN_TMP = BASE_DIR / "assets/_tmp_myotorso_bimanual_chain__comment503_505.xml"
+CHAIN_TMP = BASE_DIR / "assets/_tmp_myotorso_bimanual_chain.xml"
 TMP_XML = BASE_DIR / "_tmp_myotorso.xml"
-
-# Lines to comment out in chain XML (problematic includes)
-COMMENT_START_LINE = 503
-COMMENT_END_LINE = 505
 
 EPS = 1e-5
 ACTIVATION = 1.0
@@ -40,11 +37,20 @@ SKIP_JOINTS = {
 }
 
 
-def comment_out_lines(src: Path, dst: Path, start: int, end: int):
-    """Comment out lines [start, end] in src and write to dst."""
+def comment_out_bimanual_attachment(src: Path, dst: Path):
+    """Remove the arm attachment from the isolated torso debug model."""
     lines = src.read_text().splitlines(True)
-    chunk = "".join(lines[start - 1:end])
-    lines[start - 1:end] = [f"<!--\n{chunk}-->\n"]
+    start = next(
+        index
+        for index, line in enumerate(lines)
+        if '<body name="bimanual_attachment"' in line
+    )
+    end = next(
+        index for index in range(start + 1, len(lines))
+        if "</body>" in lines[index]
+    )
+    chunk = "".join(lines[start:end + 1])
+    lines[start:end + 1] = [f"<!--\n{chunk}-->\n"]
     dst.parent.mkdir(parents=True, exist_ok=True)
     dst.write_text("".join(lines))
 
@@ -64,11 +70,12 @@ def build_tmp_wrapper_xml(chain_include: str) -> str:
 """
 
 
-comment_out_lines(CHAIN_SRC, CHAIN_TMP, COMMENT_START_LINE, COMMENT_END_LINE)
+comment_out_bimanual_attachment(CHAIN_SRC, CHAIN_TMP)
 TMP_XML.write_text(build_tmp_wrapper_xml(f"assets/{CHAIN_TMP.name}"))
 
 model = mujoco.MjModel.from_xml_path(str(TMP_XML))
 data = mujoco.MjData(model)
+EQ_MAP = parse_model_joint_equalities(model)
 
 
 def muscle_pair_sides(base_muscle: str):
@@ -105,13 +112,14 @@ def analyze_pair(base_muscle: str, base_joint: str):
             continue
 
         jnt_range, ma = compute_moment_arm_curve(
-            model, data, tendon_id, jnt_id, eps=EPS
+            model, data, tendon_id, jnt_id, eps=EPS, eq_map=EQ_MAP
         )
         if jnt_range is None or ma is None or np.allclose(ma, 0, atol=1e-6):
             return None
 
         mtu_len, forces = compute_force_length_curve(
-            model, data, act_id, jnt_id, activation=ACTIVATION
+            model, data, act_id, jnt_id,
+            activation=ACTIVATION, eq_map=EQ_MAP,
         )
 
         curves[side] = dict(
@@ -151,6 +159,8 @@ try:
             continue
 
         for jnt_id in range(model.njnt):
+            if jnt_id in EQ_MAP:
+                continue
             jnt_name = mujoco.mj_id2name(
                 model, mujoco.mjtObj.mjOBJ_JOINT, jnt_id
             )
@@ -162,7 +172,7 @@ try:
                 continue
 
             jnt_range, ma = compute_moment_arm_curve(
-                model, data, tendon_id, jnt_id, eps=EPS
+                model, data, tendon_id, jnt_id, eps=EPS, eq_map=EQ_MAP
             )
             if jnt_range is None or np.allclose(ma, 0, atol=1e-6):
                 continue
