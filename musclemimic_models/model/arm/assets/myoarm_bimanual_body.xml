@@ -57,7 +57,7 @@
                         <site name="PECM1_PECM1-P4" pos="0.00321 -0.00013 0.05113" />
                         <site class="marker" name="R.Clavicle_marker" pos="0.01835 -0.00464 -0.00046" />
                         <body name="clavphant_r" pos="-0.01433 0.02007 0.135535">
-                            <inertial diaginertia="1 1 1" mass="0.001" pos="-0.014 0.02 0.14" />
+                            <inertial diaginertia="1e-9 1e-9 1e-9" mass="0.001" pos="-0.014 0.02 0.14" />
                             <joint axis="-0.994473 0 -0.104997" name="unrotscap_r3_r" pos="0 0 0" range="-0.318 -0.0" damping="1.05" stiffness="0.0" armature="0.0001" />
                             <joint axis="0.0153 0.989299 -0.1451" name="unrotscap_r2_r" pos="0 0 0" range="0.0 0.75" damping="1.05" stiffness="0.0" armature="0.0001" />
                             <body name="scapula_r" pos="0 0 0">
@@ -110,15 +110,15 @@
                                 <site name="BICshort_BICshort-P2" pos="0.00093 -0.06704 -0.01593" />
                                 <site class="marker" name="R.Shoulder_marker" pos="0.0014 -0.00147 0.01369" />
                                 <body name="scapphant_r" pos="-0.00955 -0.034 0.009">
-                                    <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0" />
+                                    <inertial diaginertia="1e-9 1e-9 1e-9" mass="0.001" pos="0 0 0" />
                                     <joint axis="0.6377 0.1186 0.7611" name="unrothum_r1_r" pos="0 0 0" range="-0.552 -0.0" damping="1.05" stiffness="0.0" armature="0.0001" />
                                     <joint axis="-0.754084 0.297594 0.585487" name="unrothum_r3_r" pos="0 0 0" range="-1.228 -0.0" damping="1.05" stiffness="0.0" armature="0.0001" />
                                     <joint axis="0.157095 0.947269 -0.279291" name="unrothum_r2_r" pos="0 0 0" range="0.0 0.152" damping="1.05" stiffness="0.0" armature="0.0001" />
                                     <body name="humphant_r" pos="0 0 0">
-                                        <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0" />
+                                        <inertial diaginertia="1e-9 1e-9 1e-9" mass="0.001" pos="0 0 0" />
                                         <joint name="elv_angle_r" range="-1.658 2.269" limited="true" axis="0.0048 0.999089 0.0424" type="hinge" damping="1.05" stiffness="0.0" armature="0.0001" />
                                         <body name="humphant1_r" pos="0 0 0">
-                                            <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0" />
+                                            <inertial diaginertia="1e-9 1e-9 1e-9" mass="0.001" pos="0 0 0" />
                                             <joint name="shoulder_elv_r" range="0.0 3.142" limited="true" axis="-0.998261 0.0023 0.058898" type="hinge" damping="1.05" stiffness="0.0" armature="0.0001" />
                                             <joint name="shoulder1_r2_r" pos="0 0 0" range="-2.242 1.658" user="-0.251642" axis="0.00479995 0.999089 0.0423995" damping="1.05" stiffness="0.0" armature="0.0001" />
                                             <body name="humerus_r" pos="0 0 0">
@@ -844,7 +844,7 @@
                         <site class="marker" name="R.Clavicle_marker_left" pos="0.01835 -0.00464 0.00046" />
                         <geom name="clavicle_l" mesh="clavicle_l" class="bone" />
                         <body name="clavphant_l" pos="-0.01433 0.02007 -0.135535">
-                            <inertial mass="0.001" pos="-0.014 0.02 -0.14" diaginertia="1 1 1" />
+                            <inertial mass="0.001" pos="-0.014 0.02 -0.14" diaginertia="1e-9 1e-9 1e-9" />
                             <joint axis="0.994473 0 -0.104997" name="unrotscap_r3_l" pos="0 0 0" range="-0.318 -0.0" damping="1.05" stiffness="0.0" armature="0.0001" />
                             <joint axis="-0.0153 -0.989299 -0.1451" name="unrotscap_r2_l" pos="0 0 0" range="0.0 0.75" damping="1.05" stiffness="0.0" armature="0.0001" />
                             <body name="scapula_l" pos="0 0 0">
@@ -897,15 +897,15 @@
                                 <joint axis="-0.6377 -0.1186 0.7611" name="acromioclavicular_r1_l" pos="0 0 0" range="0.0 0.552" damping="1.05" stiffness="0.0" armature="0.0001" />
                                 <geom name="scapula_l" mesh="scapula_l" class="bone" />
                                 <body name="scapphant_l" pos="-0.00955 -0.034 -0.009">
-                                    <inertial mass="0.001" pos="0 0 0" diaginertia="1 1 1" />
+                                    <inertial mass="0.001" pos="0 0 0" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint axis="-0.6377 -0.1186 0.7611" name="unrothum_r1_l" pos="0 0 0" range="-0.552 -0.0" damping="1.05" stiffness="0.0" armature="0.0001" />
                                     <joint axis="0.754084 -0.297594 0.585487" name="unrothum_r3_l" pos="0 0 0" range="-1.228 -0.0" damping="1.05" stiffness="0.0" armature="0.0001" />
                                     <joint axis="-0.157095 -0.947269 -0.279291" name="unrothum_r2_l" pos="0 0 0" range="0.0 0.152" damping="1.05" stiffness="0.0" armature="0.0001" />
                                     <body name="humphant_l" pos="0 0 0">
-                                        <inertial mass="0.001" pos="0 0 0" diaginertia="1 1 1" />
+                                        <inertial mass="0.001" pos="0 0 0" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="elv_angle_l" range="-1.658 2.269" limited="true" axis="-0.0048 -0.999089 0.0424" type="hinge" damping="1.05" stiffness="0.0" armature="0.0001" />
                                         <body name="humphant1_l" pos="0 0 0">
-                                            <inertial mass="0.001" pos="0 0 0" diaginertia="1 1 1" />
+                                            <inertial mass="0.001" pos="0 0 0" diaginertia="1e-9 1e-9 1e-9" />
                                             <joint name="shoulder_elv_l" range="0.0 3.142" limited="true" axis="0.998261 -0.0023 0.058898" type="hinge" damping="1.05" stiffness="0.0" armature="0.0001" />
                                             <joint name="shoulder1_r2_l" pos="0 0 0" range="-2.242 1.658" user="-0.251642" axis="-0.00479995 -0.999089 0.0423995" damping="1.05" stiffness="0.0" armature="0.0001" />
                                             <body name="humerus_l" pos="0 0 0">
