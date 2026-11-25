@@ -124,7 +124,7 @@
                                             <body name="humerus_r" pos="0 0 0">
                                                 <inertial diaginertia="0.0128576 0.0121576 0.00239265" mass="1.99757" pos="0.018064 -0.140141 -0.012746" quat="0.407851 0.343714 -0.567755 0.627034" />
                                                 <geom name="humerus_r" mesh="humerus_r" class="bone" />
-                                                <joint axis="0.00479995 0.999089 0.0423995" name="shoulder_rot_r" pos="0 0 0" range="-1.571 2.094" user="0.161391" damping="1.05" stiffness="0.0" armature="0.0001" />
+                                                <joint axis="0.00479995 0.999089 0.0423995" name="shoulder_rot_r" pos="0 0 0" range="-1.658 2.094" user="0.161391" damping="1.05" stiffness="0.0" armature="0.0001" />
                                                 <geom name="humerus_r_coll" type="capsule" class="myo_coll" size="0.042 0.140" pos="0 -.13 0" euler="1.57 0 0" />
                                                 <geom name="Elbow_PT_ECRL_wrap" type="sphere" size="0.027" pos="-0.005 -0.3 0.005" class="wrap" />
                                                 <geom name="Elbow_PT_FCU_wrap" type="sphere" size="0.015" pos="-0.005 -0.29 -0.053" class="wrap" />
@@ -434,8 +434,8 @@
                                                             <site name="EDCM_torus_site_EDC3_side" pos="-0.0007 -0.0117 0.0191" />
                                                             <site name="EDCI_torus_site_EDC2_side" pos="0.009 -0.0149 0.0211" />
                                                             <site name="s_wrist_r" class="myo_marker" pos="0 0 0" />
-                                                            <joint axis="0 0 1" name="deviation_r" pos="0 0 0" range="-0.174533 0.436332" damping="0.25" stiffness="0.0" armature="0.0001" />
-                                                            <joint axis="1 0 0" name="flexion_r" pos="0 0 0" range="-0.785398 0.785398" damping="0.25" stiffness="0.0" armature="0.0001" />
+                                                            <joint axis="0 0 1" name="deviation_r" pos="0 0 0" range="-0.349066 0.523599" damping="0.25" stiffness="0.0" armature="0.0001" />
+                                                            <joint axis="1 0 0" name="flexion_r" pos="0 0 0" range="-1.396263 1.221730" damping="0.25" stiffness="0.0" armature="0.0001" />
                                                             <geom mesh="lunate_r" name="lunate_r" class="bone" />
                                                             <body name="scaphoid_r" pos="0.012345 -0.004464 -0.001254">
                                                                 <geom mesh="scaphoid_r" name="scaphoid_r" class="bone" />
@@ -1075,7 +1075,7 @@
                                                 <site class="marker" name="R.Elbow.Medial_marker_left" pos="-0.00407 -0.2844 0.05408" />
                                                 <geom name="humerus_l" mesh="humerus_l" class="bone" />
                                                 <geom name="humerus_l_coll" class="myo_coll" type="capsule" size="0.042 0.14 0" pos="0 -0.13 0" quat="0.7074 -0.7068 0 0" />
-                                                <joint name="shoulder_rot_l" range="-1.571 2.094" axis="-0.00479995 -0.999089 0.0423995" user="0.161391" damping="1.05" stiffness="0.0" armature="0.0001" />
+                                                <joint name="shoulder_rot_l" range="-1.658 2.094" axis="-0.00479995 -0.999089 0.0423995" user="0.161391" damping="1.05" stiffness="0.0" armature="0.0001" />
                                                 <body name="ulna_l" pos="0.0061 -0.290401 0.0123">
                                                     <inertial diaginertia="0.00543663 0.00523521 0.001" mass="1.1053" pos="0.00971783 -0.0959509 -0.024286" quat="0.792048 -0.609078 -0.0156735 0.0379256" />
                                                     <geom class="wrap" name="PQ2_cylinder_left" pos="-0.0012 -0.2092 -0.0428" quat="0.540392 -0.481982 0.422482 0.545141" size="0.007 0.05" type="cylinder" />
@@ -1218,8 +1218,8 @@
                                                             <site name="EDCI_torus_site_EDC2_side_left" pos="0.009 -0.0149 -0.0211" />
                                                             <site name="s_wrist_l" class="myo_marker" pos="0 0 0" />
                                                             <geom name="lunate_l" mesh="lunate_l" class="bone" />
-                                                            <joint name="deviation_l" range="-0.174533 0.436332" axis="0 0 1" type="hinge" damping="0.25" stiffness="0.0" armature="0.0001" />
-                                                            <joint name="flexion_l" range="-0.785398 0.785398" axis="-1 0 0" type="hinge" damping="0.25" stiffness="0.0" armature="0.0001" />
+                                                            <joint name="deviation_l" range="-0.349066 0.523599" axis="0 0 1" type="hinge" damping="0.25" stiffness="0.0" armature="0.0001" />
+                                                            <joint name="flexion_l" range="-1.396263 1.221730" axis="-1 0 0" type="hinge" damping="0.25" stiffness="0.0" armature="0.0001" />
                                                             <body name="scaphoid_l" pos="0.012345 -0.004464 0.001254">
                                                                 <inertial mass="0.02" pos="0 0 0" fullinertia="0.0001 0.0001 0.0001 0 0 0" />
                                                                 <geom name="scaphoid_l" mesh="scaphoid_l" class="bone" />
